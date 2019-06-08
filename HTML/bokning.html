@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+
+<html lang="sv-se">
+    <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <link rel="stylesheet" href="style/style.css">
+            <title>Caf&eacute; Choco-Latte</title>
+    </head>
+<body>
+    <header>
+        <h1>Caf&eacute; Choco-Latte</h1>
+        <h2>Fantastiskt kaffe & läckra bakverk</h2>
+        <p>Vi vill vara en kaffeoas där du känner de intensiva dofterna från kaffet när du kliver in genom dörren. Vi är en plats där du för varje kopp kaffe och bakverk ska uppleva en sann njutning och smaksensation.  Vi vill ge dig hög kvalitet utan att tumma på rättvisan gentemot kaffe- och kakoodlarna.</p>
+		<nav>
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="kaffeMeny.hmtl">Kaffemeny</a></li>
+                    <li><a href="chockladMeny.html">Chockladmeny</a></li>
+                    <li><a href="chockladProvning.html">Chockladprovning</a></li>
+                    <li><a href="omOss.html">Om oss</a></li>
+                </ul>
+            </nav>
+            <hr>
+    </header>
+    <main>
+        <section>
+            <h2>Bokningsformulär</h2>
+            <form action="/action_page.php" method="get">
+                <div class="formdiv">
+                    Välj datum:<br>
+                    <input type="radio" name="date" value="30april"> 30 april<br>
+                    <input type="radio" name="date" value="2may"> 2 maj<br>
+                    <input type="radio" name="date" value="7may"> 7 maj<br>
+                    <input type="radio" name="date" value="9may"> 9 maj<br>
+                    <input type="radio" name="date" value="14may"> 14 maj<br>
+                    <input type="radio" name="date" value="16may"> 16 maj
+                </div>
+                <br>
+                <div class="formdiv">
+                    Välj antal personer:<br>
+                    <select id="guests">
+                        <option value = "1" selected>1</option>
+                        <option value = "2">2</option>
+                        <option value = "3">3</option>
+                        <option value = "4">4</option>
+                        <option value = "5">5</option>
+                        <option value = "6">6</option>
+                        <option value = "7">7</option>
+                        <option value = "8">8</option>
+                        <option value = "9">9</option>
+                        <option value = "10">10</option>
+                        <option value = "11">11</option>
+                        <option value = "12">12</option>
+                    </select>
+                </div>
+                <br>
+                <div class="formdiv">
+                        Fyll i dina uppgifter:<br>
+                        Förnamn: <input type="text" id="first_name"><br>
+                        Efternamn: <input type="text" id="last_name"><br>
+                        Mobil: <input type="text" id="mobile"><br>
+                        Epost: <input type="text" id="email"><br>
+                        Meddelande:<textarea rows="2" id="messege" style="resize: none"></textarea>
+                </div>
+                <p><input type="reset" value="Rensa"><input type="submit" value="Skicka"></p>
+
+              </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Copyright 2019 | Caf&eacute; Choco-Latte</p>
+    </footer>
+</body>
+</html>
