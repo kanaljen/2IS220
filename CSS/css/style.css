@@ -1,0 +1,244 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of reset */
+
+#container {
+  display: grid;
+  grid-template-columns: [rside] 170px [main] auto [end];
+  grid-template-rows: [title] 100px [navtrack] 50px [main] auto [footer] 15px [end];
+  grid-template-areas: 
+    "header header"
+    "left nav"
+    "left main"
+    "footer footer";
+}
+
+header {
+  grid-area: header;
+  background: #B3E5FC;
+  font-family: 'Original Surfer', cursive;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 65px;
+}
+
+header p {
+  font-size: 25px;
+}
+
+nav {
+  grid-area: nav;
+  background: #81D4FA;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li{
+  list-style-type: none;
+  width: 25%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+nav ul li a {
+  font-size: 40px;
+  text-decoration: none;
+  color: #2196F3;
+}
+
+nav ul li a:hover {
+  color: #FFF;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: [start] 20px [main] auto [right] auto [padding] 20px [end];
+  grid-template-rows: [start] 20px [classes] auto [ourstory] auto [empty] auto [padding] 20px [end];
+  grid-template-areas:
+    ". . . ."
+    ". products classes ."
+    ". products story ."
+    ". products . ."
+    ". . . .";
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+}
+
+#newsletter {
+  grid-area: left;
+}
+
+#newsletter h2 {
+  padding: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#newsletter p {
+  padding: 10px;
+}
+
+#newsletter form {
+  padding: 10px;
+  font-size: 15px;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+}
+
+footer p {
+    background: #B3E5FC;
+    color: grey;
+}
+
+#products {
+  grid-area: products;
+}
+
+#classes {
+  align-self: start;
+  grid-area: classes;
+  margin-bottom: 25px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  background: #F5F5F5;
+  height: auto;
+}
+
+#classes h2 {
+  font-size: 25px;
+  padding-bottom: 10px;
+  font-family: 'Original Surfer', cursive;
+}
+table {
+  margin: 10px;
+  background: #FFF;
+}
+
+th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: left;
+  padding: 15px;
+}
+
+table tr:first-child {
+  background: #B3E5FC;
+  font-weight: bold;
+}
+
+#story {
+  grid-area: story;
+  align-self: start;
+  margin-bottom: 25px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  background: #F5F5F5;
+  height: auto;
+}
+
+#story h2 {
+  font-size: 25px;
+  padding-bottom: 10px;
+  font-family: 'Original Surfer', cursive;
+}
+
+#story img{
+  width:100%;
+}
+
+.promote {
+}
+
+article {
+  margin-bottom: 25px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  background: #F5F5F5;
+}
+
+article h2 {
+  font-size: 25px;
+  padding-bottom: 10px;
+  font-family: 'Original Surfer', cursive;
+}
+
+article h3 {
+  font-size: 15px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  color: #BDBDBD;
+}
+
+article p {
+  font-size: 15px;
+  padding: 5px;
+}
+
+article img{
+  width:100%;
+}
+
+img {
+  border: 1px solid black;
+}
