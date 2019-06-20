@@ -3,13 +3,13 @@
 <html lang="sv-se">
     <head>
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-            <link rel="stylesheet" href="style/style.css">
+            <link rel="stylesheet" href="style/style.css"></link>
             <title>Caf&eacute; Choco-Latte</title>
     </head>
 <body>
     <header>
         <h1>Caf&eacute; Choco-Latte</h1>
-        <h2>Fantastiskt kaffe & läckra bakverk</h2>
+        <h2>Fantastiskt kaffe &amp; läckra bakverk</h2>
         <p>Vi vill vara en kaffeoas där du känner de intensiva dofterna från kaffet när du kliver in genom dörren. Vi är en plats där du för varje kopp kaffe och bakverk ska uppleva en sann njutning och smaksensation.  Vi vill ge dig hög kvalitet utan att tumma på rättvisan gentemot kaffe- och kakoodlarna.</p>
 		<nav>
                 <ul>
@@ -20,24 +20,24 @@
                     <li><a href="omOss.html">Om oss</a></li>
                 </ul>
             </nav>
-            <hr>
+            <hr></hr>
     </header>
     <main>
         <section>
             <h2>Bokningsformulär</h2>
             <form action="/action_page.php" method="get">
                 <div class="formdiv">
-                    Välj datum:<br>
-                    <input type="radio" name="date" value="30april"> 30 april<br>
-                    <input type="radio" name="date" value="2may"> 2 maj<br>
-                    <input type="radio" name="date" value="7may"> 7 maj<br>
-                    <input type="radio" name="date" value="9may"> 9 maj<br>
-                    <input type="radio" name="date" value="14may"> 14 maj<br>
-                    <input type="radio" name="date" value="16may"> 16 maj
+                    <p>Välj datum:</p>
+                    <p><input type="radio" name="date" value="30april"><label>30 april</label></p>
+                    <p><input type="radio" name="date" value="2may"><label>2 maj</label></p>
+                    <p><input type="radio" name="date" value="7may"><label>7 maj</label></p>
+                    <p><input type="radio" name="date" value="9may"><label>9 maj</label></p>
+                    <p><input type="radio" name="date" value="14may"><label>14 maj</label></p>
+                    <p><input type="radio" name="date" value="16may"><label>16 maj</label></p>
                 </div>
-                <br>
+                <br></br>
                 <div class="formdiv">
-                    Välj antal personer:<br>
+                    <p>Välj antal personer:</p>
                     <select id="guests">
                         <option value = "1" selected>1</option>
                         <option value = "2">2</option>
@@ -53,14 +53,13 @@
                         <option value = "12">12</option>
                     </select>
                 </div>
-                <br>
+                <br></br>
                 <div class="formdiv">
-                        Fyll i dina uppgifter:<br>
-                        Förnamn: <input type="text" id="first_name"><br>
-                        Efternamn: <input type="text" id="last_name"><br>
-                        Mobil: <input type="text" id="mobile"><br>
-                        Epost: <input type="text" id="email"><br>
-                        Meddelande:<textarea rows="2" id="messege" style="resize: none"></textarea>
+                        <p>Fyll i dina uppgifter:</p>
+                        <p><label>Förnamn:</label><input type="text" id="first_name"></p>
+                        <p><label>Mobil:</label><input type="text" id="mobile"></p>
+                        <p><label>Epost:</label><input type="text" id="email"></p>
+                        <p><label>Meddelande:</label><textarea rows="2" id="messege" style="resize: none"></textarea></p>
                 </div>
                 <p><input type="reset" value="Rensa"><input type="submit" value="Skicka"></p>
 
